@@ -54,13 +54,19 @@ export default class Form extends Component {
                         <input type="radio" name="radSize" id="sizeSmall" value="small" /><label>NO</label> <br /> <br />
                     </div>
                     <div className="who">
+
+
+
+
+
                         Please indicate who is going to pay your fees *<br /><br />
-                        <input type="radio" name="radSize" id="sizeMed" value="small" checked="checked" />
+                        <input type="checkbox" name="radSize" id="sizeMed" value="small"/>
                         <label>Yourself</label>
-                        <input type="radio" name="radSize" id="sizeMed" value="medium" />
+                        <input type="checkbox" name="radSize" id="sizeMed" value="medium" />
                         <label for="sizeSmall">Parnet/Sponsor</label>
-                        <input type="radio" name="radSize" id="sizeMed" value="large" />
+                        <input type="checkbox" name="radSize" id="sizeMed" value="large" />
                         <label for="sizeMed">Organization</label>
+                        <h5>Select one option</h5>
                     </div>
                     <div className="location">
                         <label>Location</label><br /><br />
