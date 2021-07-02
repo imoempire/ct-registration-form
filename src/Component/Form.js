@@ -13,14 +13,14 @@ export default class Form extends Component {
         const name = target.name;
 
         this.setState({
-            [name]: value
+            [name]: value,
         });
     }
     render() {
         return (
             <>
                 <form>
-                    <div class="title">
+                    <div className="title">
                         <h1>Codetrain Registration Form</h1><br />
                         This form is the first step to register for Codetrain's program starting on 25th July 2020. Our admissions team will reach out to you after successfully submitting your form.
                         <p >Required<span>*</span></p> <br />
@@ -63,9 +63,9 @@ export default class Form extends Component {
                         <input type="checkbox" name="radSize" id="sizeMed" value="small"/>
                         <label>Yourself</label>
                         <input type="checkbox" name="radSize" id="sizeMed" value="medium" />
-                        <label for="sizeSmall">Parnet/Sponsor</label>
+                        <label htmlFor="sizeSmall">Parnet/Sponsor</label>
                         <input type="checkbox" name="radSize" id="sizeMed" value="large" />
-                        <label for="sizeMed">Organization</label>
+                        <label htmlFor="sizeMed">Organization</label>
                         <h5>Select one option</h5>
                     </div>
                     <div className="location">
@@ -80,7 +80,7 @@ export default class Form extends Component {
 
                     <div className="why">
                         Why do you want to join Codetrain *<br /><br />
-                        <textarea name="comments" id="comments" style={{ width: '100%', height: '50%;' }} value={this.state.comments} onChange={this.handleChange}>
+                        <textarea name="comments" id="comments" style={{ width: '100%', height: '50%' }} value={this.state.comments} onChange={this.handleChange}>
                         </textarea><br />
                     </div>
 
